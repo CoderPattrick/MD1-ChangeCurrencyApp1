@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConvertMoney</title>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>&nbsp;</th>
+        <th>From Currency</th>
+        <th>&nbsp;</th>
+        <th>To Currency</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+    <tr>
+        <td><label><input type="text" id="ammount" name="ammount" placeholder="1000"></label></td>
+        <td>&nbsp;</td>
+        <td><label><select id="select1" style="width: 150px" name="inputCurrency">
+            <option name="inputCurrency" value="VND">VND</option>
+            <option name="inputCurrency" value="USD">USD</option>
+        </select></label></td>
+        <td>&nbsp;</td>
+        <td><label><select id="select2" style="width: 150px" name="outputCurrency">
+            <option name="outputCurrency" value="VND">VND</option>
+            <option name="outputCurrency" value="USD">USD</option>
+        </select></label></td>
+        <td>&nbsp;</td>
+        <td><button type="button" style="background-color: blue;color: white" name="convert"  onclick="convert()">Convert</button></td>
+    </tr>
+</table>
+<p>Result: <b id="output"></b> <b id="currency"></b></p>
+
+
+
+</body>
+</html>
+<script src="ConvertMoneyJS.js"></script>
